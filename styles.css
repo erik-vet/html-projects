@@ -1,0 +1,174 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.unicorn {
+    background-color: #a526ea;
+    color: #FFF;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.unicorn2 {
+    background-color: #a526ea;
+    color: #FFF;
+    padding: 15px 15px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+}
+/* filler content using "" overlapping with unicorn h1*/
+.unicorn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(to left, #ea26e4, #a526ea)
+}
+
+.unicorn:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(to right, #ea26e4, #a526ea)
+}
+
+.unicorn2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(to left, #ea26e4, #a526ea)
+}
+
+.unicorn2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(to right, #ea26e4, #a526ea)
+}
+
+/* 1em is 16px */
+.unicorn h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 5px 5px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+      0px 0px 20px #b393d3;
+    margin: 0;
+}
+
+.unicorn h2 {
+    font-size: 20px;
+    font-weight: 40em;
+    color: #fdfdfe;
+    text-shadow: 5px 5px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+      0px 0px 20px #b393d3;
+    margin: 10;
+}
+
+.filter-products {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-products a {
+    text-decoration: none;
+    padding: 10px;
+    color: #a526ea;
+    border: solid 2px;
+    margin: 3px;
+}
+
+.text {
+    text-align: center;
+    padding: 10px 5px
+    
+}
+
+
+
+
+.image img {
+    height: 100px;
+    padding: 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+    
+}
+
+.container {
+    border: solid 2px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 38em;
+    
+}
+
+
+
+
+/* Hover effect with box-shadow with values of Offset-x, Offset-y, Blur-radius,
+Spread-radius, Colour
+
+Drop shadow with values Colour, X-offset, Y-offset, Gaussian blur
+
+*/
+img:hover {
+    box-shadow: 0 0 4px 2px #5c5959;
+    filter:drop-shadow(#5c5959 1em 1em 10px);
+    cursor:pointer;
+}
+
+.unicorn2 p {
+    font-weight:bold;
+    align-items: center;
+    text-decoration: none;
+    
+        
+}
+
+a {
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+.share {
+    padding: 0px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.share b {
+    background: linear-gradient(#d147d1, #702acb);
+    padding: 10px;
+    color: #FFF;
+    border-radius: 10px;
+    display: inline-block;
+}
+.share b:hover {
+    box-shadow: 0 0 4px 2px #a526ea;
+    filter:drop-shadow(#cd09ec 1em 1em 10px);
+    cursor:pointer;
+}
